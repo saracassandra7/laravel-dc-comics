@@ -3,6 +3,7 @@
 @section('content')
 <div class="container">
     <h1 class="text-center m-3">Comics dashboard</h1>
+    <a class="btn btn-info mb-5" href="{{route('comics.create')}}">Crea nuovo fumetto</a>
 
     <table class="table table-striped">
         <thead>
