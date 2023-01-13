@@ -20,7 +20,11 @@
                  <td>{{$comic->id}}</td>
                  <td>{{$comic->title}}</td>
                  <td>&euro; {{$comic->price}}</td>
-                 <td><a class="btn btn-primary" href="{{route('comics.show', $comic)}}" title="show"><i class="fa-regular fa-eye"></i></a></td>
+                 <td>
+                  <a class="btn btn-primary" href="{{route('comics.show', $comic)}}" title="show"><i class="fa-regular fa-eye"></i></a>
+                  <a class="btn btn-warning " href="{{route('comics.edit', $comic)}}" title="edit"><i class="fa-solid fa-pencil"></i></a>
+
+                </td>
              </tr>
 
             @empty
